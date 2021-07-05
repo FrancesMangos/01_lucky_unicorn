@@ -1,6 +1,5 @@
-#Hello World Greeting
-greeting = "Hello" \
-           " World!!!"
+#Lucky options
+options = ["zebra", "horse", "donkey", "unicorn"]
 
-for letter in greeting:
-    print(letter)
+for item in options:
+    print(options)
