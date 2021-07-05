@@ -1,8 +1,3 @@
-#Ask user for number
-number = int(input("Give thy a number!"))
-
-#Multiply number by 5
-by_five = number * 5
-
-#Print the outcome
-print("{} is equal to {} times 5".format(by_five, number))
+#From one to ten via plus one
+for item in range(1, 10 + 1):
+    print(item)
