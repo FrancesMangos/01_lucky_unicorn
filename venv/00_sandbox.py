@@ -1,3 +1,6 @@
-#From ten to one via minus one
-for item in range(10, 0, - 1):
-    print(item)
+#Hello World Greeting
+greeting = "Hello" \
+           " World!!!"
+
+for letter in greeting:
+    print(letter)
