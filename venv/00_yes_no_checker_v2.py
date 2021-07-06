@@ -15,7 +15,7 @@ while show_instructions.lower() != "xxx":
 
     #If input not yes or no, clarify question
     else:
-        print("please insert a yes / no")
+        print("<error> please insert a yes / no")
 
 
     print("You chose {}".format(show_instructions))
