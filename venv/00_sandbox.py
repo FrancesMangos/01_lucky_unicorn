@@ -1,5 +1,8 @@
-#Lucky options
-options = ["zebra", "horse", "donkey", "unicorn"]
+#
+name = ""
+while name.lower() != "xxx":
+    name = input("Who art thou?")
+    print(name)
 
-for item in options:
-    print(options)
+print()
+print("We are done!")
