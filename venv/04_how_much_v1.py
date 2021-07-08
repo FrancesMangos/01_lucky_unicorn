@@ -6,9 +6,9 @@ while not valid:
     response = int(input("How much money would you like to play with?"))
 
 
-    if response == < 1 or > 10
-    print("Please enter a number between 1 and 10")
-    return response
+    if 0 < response <= 10:
+
+        print("You have asked to play with ${}".format(response))
 
     else:
-    print(error)
+        print(error)
