@@ -1,8 +1,5 @@
-#Ask for a name and see if it matches the code
-name = ""
-while name.lower() != "xxx":
-    name = input("Who art thou?")
-    print(name)
+import random
 
-print()
-print("We are done!")
+for item in range(0, 20):
+    number = random.randint(0, 4)
+    print(number, end"\t")
