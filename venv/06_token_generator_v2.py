@@ -8,7 +8,7 @@ STARTING_BALANCE = 100
 
 balance = STARTING_BALANCE
 #Testing loop to generate 20 tokens
-for item in range(0, 500):
+for item in range(0, 20):
     chosen = random.choice(tokens)
     print(chosen, end='\t')
 
@@ -23,4 +23,3 @@ for item in range(0, 500):
 print()
 print("Starting Balance: ${:.2f}".format(STARTING_BALANCE))
 print("Final Balance: {:.2f}".format(balance))
-
