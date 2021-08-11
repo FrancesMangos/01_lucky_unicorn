@@ -75,8 +75,8 @@ def statement_generator(statement, decoration):
 
 #Main routine goes here
 statement_generator("Welcome to the Lucky Unicorn Game", "*")
-print()
 
+#Ask if the user has played the game before
 played_before = yes_no("Have thou played "
                          "the game before?")
 
@@ -85,6 +85,7 @@ if played_before == "no":
 else:
     print("program continues")
 
+#Ask the user how much money then want to play with
 print()
 statement_generator("Let's get Started", "-")
 how_much = num_check("How much money would you "
@@ -94,19 +95,20 @@ balance = how_much
 
 rounds_played = 0
 
+#Start the game
 play_again = input("Press <Enter> to play...").lower()
 while play_again == "":
 
-    #increase # of rounds played
+    #Increase number of rounds played
     rounds_played += 1
 
-    #print round number
+    #Print round number
     print()
     print("Round #{}".format(rounds_played))
 
     chosen_num = random.randint(1, 100)
 
-    #Adjust balance
+    #Adjust balance and choose prize_decoration and chosen
     if 1 <= chosen_num <= 5:
         prize_decoration = "!"
         chosen = "unicorn"
@@ -124,8 +126,10 @@ while play_again == "":
             prize_decoration = "~"
             balance -= 0.5
 
+    #Display chosen and balance
     outcome = "You got a {}. Your balance is:" \
               " ${:.2f}".format(chosen, balance)
+
 
     statement_generator(outcome, prize_decoration)
 
@@ -136,5 +140,6 @@ while play_again == "":
     else:
         play_again = input("Press Enter to play again or 'xxx' to quit")
 
+#Print final balance
 print()
 print("Final Balance:", balance)
