@@ -121,6 +121,7 @@ while play_again == "":
         if chosen_num % 2 == 0:
             prize_decoration = "+"
             chosen = "horse"
+            balance -= 0.5
         else:
             chosen = "zebra"
             prize_decoration = "~"
@@ -142,4 +143,5 @@ while play_again == "":
 
 #Print final balance
 print()
+print("Starting Balance:", how_much)
 print("Final Balance:", balance)
